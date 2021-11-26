@@ -206,7 +206,7 @@ a {
   cursor: pointer;
   font-size: 1.6rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   margin: 1rem 0;
@@ -267,6 +267,7 @@ a {
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+    padding: 2rem 3rem;
   }
 }
 
@@ -293,6 +294,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -433,6 +435,11 @@ a {
   font-style: italic;
   color: #5c5577;
   line-height: 1.3;
+  display: block;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
 }
 .quote__text::before {
   content: open-quote;
@@ -522,6 +529,11 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 7px;
+}
+
+.callout__box {
+  display: inline-block;
+  margin: 0 6rem;
 }
 
 .callout--primary {
@@ -722,8 +734,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-heading);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -795,6 +808,11 @@ a {
 .footer {
   background: #232323;
 }
+
+.footer__block {
+  margin-top: -15rem;
+  padding-top: 16rem;
+}
 .footer a {
   color: #777;
   transition: color 0.2s;
@@ -837,6 +855,10 @@ a {
 @media screen and (min-width: 768px) {
   .footer__sections {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .footer__block {
+    margin-top: -10rem;
+    padding-top: 11rem;
   }
   .footer .collapsible__chevron {
     display: none;
