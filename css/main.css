@@ -532,8 +532,14 @@ a {
 }
 
 .callout__box {
-  display: inline-block;
-  margin: 0 6rem;
+  margin: auto;
+  max-width: 1140px;
+}
+
+@media screen and (max-width: 1200px) {
+  .callout__box {
+    max-width: 85vw;
+  }
 }
 
 .callout--primary {
