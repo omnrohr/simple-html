@@ -1,0 +1,29 @@
+{
+  "name": "simple-html",
+  "version": "1.0.0",
+  "description": "htm templeate",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omnrohr/simple-html.git"
+  },
+  "keywords": [
+    "html",
+    "css"
+  ],
+  "author": "Obada",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omnrohr/simple-html/issues"
+  },
+  "homepage": "https://github.com/omnrohr/simple-html#readme",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  },
+  "minifySvg": {
+    "minifySvg": false
+    }
+}
